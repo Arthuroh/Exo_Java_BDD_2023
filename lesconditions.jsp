@@ -48,6 +48,14 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 
+<p System.out.println("Vous avez choisi : " + A + "\n"); p>
+	    
+	   <% if(A<0) {
+	    	System.out.println("Le nombre " + A + " est négatif "); 
+	    }if(A>0) {
+			System.out.println("Le nombre " + A + " est positif ");
+		} %>
+
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
