@@ -11,20 +11,20 @@
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
-    <% String valeur1 = request.getParameter("valeur1"); %>
-    <% String valeur2 = request.getParameter("valeur2"); %>
-    <% String valeur2 = request.getParameter("valeur3"); %>
+    <% String A = request.getParameter("valeur1"); %>
+    <% String B = request.getParameter("valeur2"); %>
+    <% String C = request.getParameter("valeur3"); %>
 
     <%-- Vérification de la condition entre les deux valeurs --%>
-    <% if (valeur1 != null && valeur2 != null) { %>
+    <% if (A != null && B != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intValeur1 = Integer.parseInt(valeur1); %>
-        <% int intValeur2 = Integer.parseInt(valeur2); %>
+        <% int intA = Integer.parseInt(A); %>
+        <% int intB = Integer.parseInt(B); %>
         
         <%-- Condition if pour comparer les valeurs --%>
-        <% if (intValeur1 > intValeur2) { %>
+        <% if (intA > intB) { %>
             <p>Valeur 1 est supérieure à Valeur 2.</p>
-        <% } else if (intValeur1 < intValeur2) { %>
+        <% } else if (intA < intB) { %>
             <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
             <p>Valeur 1 est égale à Valeur 2.</p>
